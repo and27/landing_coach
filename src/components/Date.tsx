@@ -1,34 +1,35 @@
+import ButtomLink from "./ButtonLink";
+
 const Date = () => {
   return (
     <section
-      className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:py-12 lg:px-8 flex justify-around bg-neutral-100/90 backdrop-blur-lg
+      className="max-w-6xl mx-auto py-57 px-4 sm:px-6 lg:py-10 lg:px-8 flex justify-around bg-neutral-100/90 backdrop-blur-lg
        text-neutral-900 mt-[2rem] lg:-mt-[2rem] relative z-10 rounded"
     >
       <h2 className="text-3xl font-semibold text-center sr-only">
-        Detalles del curso
+        Visibilidad es poder
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="flex gap-5 items-center text-neutral-800">
-          <p className="text-5xl">📅</p>
-          <div>
-            <h3 className="text-xl font-semibold mb-1 ">
-              Inicia 1 de julio de 2024
-            </h3>
-            <p>7:30 PM - 9:00 PM (UTC-5)</p>
-          </div>
-        </div>
-        <div className="flex gap-5 items-center">
-          <p className="text-5xl">
-            <span role="img" aria-label="alert">
-              ⚠️
-            </span>
+      <div className="grid grid-cols-1">
+        <div
+          className="flex flex-col
+         gap-1 items-center text-center text-neutral-800"
+        >
+          <h3 className="text-3xl font-semibold mb-1 ">
+            Visibilidad es poder. <br />
+            Haz que tu web de coaching destaque
+          </h3>
+          <p>
+            No esperes más. Descarga el checklist y empieza a atraer clientes
+            ideales hoy mismo
           </p>
-          <div>
-            <h3 className="text-xl font-semibold mb-1">
-              Quedan pocas plazas libres
-            </h3>
-            <p>Reserva pronto para asegurar tu lugar en el taller.</p>
-          </div>
+          <ButtomLink
+            className="uppercase text-center mt-4"
+            href="https://wa.me/+593997019475?text=Hola%20quiero%20más%20información%20sobre%20el%20taller"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Descargar ahora
+          </ButtomLink>
         </div>
       </div>
     </section>

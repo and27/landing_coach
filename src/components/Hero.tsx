@@ -6,10 +6,13 @@ const Hero = () => {
       <main className="grid grid-cols-1 lg:grid-cols-2 max-w-[1280px] mx-auto h-screen items-center p-5">
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            ¿Tu web de coach NO convierte? 7 pasos para atraer clientes ideales{" "}
+            <span className="text-3xl mb-3">Checklist para coaches:</span>
+            <br />
+            <span>7 elementos que </span>
             <span className="text-red-700 underline bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
-              (y llenar tu agenda)
+              no pueden faltar{" "}
             </span>
+            en tu sitio web.
           </h1>
           <p className="md:text-lg">
             Descarga este checklist gratuito y descubre cómo optimizar tu sitio
